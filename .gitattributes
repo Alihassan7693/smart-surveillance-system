@@ -1,0 +1,11 @@
+# Normalize line endings to LF for text files
+* text=auto eol=lf
+
+# Treat these as binary (no line-ending conversion)
+*.pth binary
+*.pt  binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.mp4 binary
+*.ico binary
