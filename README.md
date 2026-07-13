@@ -174,6 +174,11 @@ cd backend
 python main.py          # serves on http://127.0.0.1:8000
 ```
 
+> If `python main.py` doesn't start the server, run it directly with Uvicorn:
+> ```bash
+> py -3.11 -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
+> ```
+
 **Terminal 2 — frontend (dev):**
 ```bash
 cd frontend
@@ -204,14 +209,3 @@ Trained weights (`modelA_best.pth`, `model3c_best.pth`) are included under `back
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
-
----
-
-<div align="center">
-
-Built as a Final Year Project. ⭐ If you find it useful, consider starring the repo!
-
-</div>
