@@ -122,7 +122,7 @@ FYP/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/smart-surveillance-system.git
+git clone https://github.com/Alihassan7693/smart-surveillance-system.git
 cd smart-surveillance-system
 ```
 
