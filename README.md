@@ -45,9 +45,9 @@ When an anomaly is detected, the system automatically **records the clip**, **up
 
 ---
 
-## 🖼️ Screenshots
 
-> _Add your own screenshots to `docs/screenshots/` and they will appear here._
+
+
 
 | Dashboard | Live Feed |
 |-----------|-----------|
@@ -186,9 +186,28 @@ npm run dev             # serves on http://127.0.0.1:5173
 ```
 
 Open **http://127.0.0.1:5173** in your browser.
-Default admin login: **`admin` / `admin123`** (change this in `.env`).
 
 > To serve the app as a single deployment, run `npm run build` in `frontend/` — the FastAPI backend will serve the built frontend from `frontend/dist`.
+
+---
+
+## 👥 User Roles & Login
+
+The system has **two types of accounts**:
+
+| Role | How to log in | Access |
+|------|---------------|--------|
+| **Admin** | Username & password from `.env` — default **`admin` / `admin123`** | Full access, including the **Admin** page to manage the security personnel account |
+| **Security Personnel** | The **email & password** the admin sets for them | Day-to-day monitoring — live feeds, uploads, history, alerts |
+
+**Creating / changing the security personnel account:**
+
+1. Log in as **admin**.
+2. Go to the **Admin** page.
+3. Add a security personnel account — set their **name, email, and password** (you can also update or change these later from the same page).
+4. Log out, then log in with those **security personnel credentials** (their email + password).
+
+> ℹ️ The admin credentials are fixed in `.env` (change `ADMIN_USERNAME` / `ADMIN_PASSWORD` there). Security personnel accounts are created and managed by the admin and stored in Firebase.
 
 ---
 
